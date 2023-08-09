@@ -8,10 +8,7 @@ const app = express();
 
 app.use(cors());
 app.use(express.json());
-app.get("/", (req, res) => res.json({ msg: "hello word" }));
-
+app.get("/", (req, res) => res.json({ msg: "hello wordzz" }));
 app.use("/admin", adminRouter);
 app.use("/user", userRouter);
-app.get("/", (req, res) => res.json({ msg: "hello there" }));
-
 app.listen(3000, () => console.log("Server running on port 3000"));
