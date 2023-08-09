@@ -8,6 +8,7 @@ const app = express();
 
 app.use(cors());
 app.use(express.json());
+app.get("/",(req,res)=>res.json({msg:"hello word"}));
 
 app.use("/admin", adminRouter)
 app.use("/user", userRouter)
